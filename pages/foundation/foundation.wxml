@@ -1,0 +1,32 @@
+<!--pages/foundation/foundation.wxml-->
+<view class="container_all">
+  <view class="search">
+    <view class="search-input">
+      <image class="search-icon" src="http://8.219.238.51/images/search.png"></image>
+      <input placeholder="请输入搜索"></input>
+    </view>
+    <view class="search-cancel" bindtap="SeachCancel">搜索</view>
+  </view>
+
+  <view class="course">
+    <view class="course-show">
+      <view class="course-category">基础版课程列表</view>
+      <view class="course-all">全部</view>
+    </view>
+
+    <view class="course-content">
+      <view class="course-list" wx:for="{{course}}" wx:key="title">
+        <view class="course-item" data-index="{{index}}">
+          <image class="item-icon" src="{{item.icon}}"></image>
+          <view class="item-info">
+            <view class="item-title">{{item.title}}</view>
+            <view class="item-detail">{{item.detail}}</view>
+          </view>
+          <view class="item-button">进入学习</view>
+        </view>
+      </view>
+    </view>
+   
+  </view>
+  <view class="load-more" bindtap="loadMore">点击加载更多..</view>
+</view>

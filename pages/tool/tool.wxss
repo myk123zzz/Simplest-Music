@@ -1,0 +1,58 @@
+/* pages/tool/tool.wxss */
+page {
+  background-color: #f6f6f6;
+}
+.main{
+  width: 100%;
+  height: 100%;
+}
+
+.contain{
+  height: 90vh;
+  width: 700rpx;
+  background-color: white;
+  margin: 25rpx;
+  justify-content: center;
+  
+}
+
+.title{
+  height: 80rpx;
+  margin-left: 30rpx;
+  line-height: 55px;
+  font-weight:700;
+  font-size: 55rpx;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.line {
+  background-color: #000000;
+  margin:10px;
+  height:2rpx;
+  align-content: center;
+}
+
+.toolList{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.toolBox{
+  margin: 16rpx;
+  width: 200rpx;
+}
+
+.toolIcon{
+  width: 100%;
+  height: 200rpx;
+  margin: 13rpx;
+}
+
+.toolTitle{
+  width: 200rpx;
+  align-content: center;
+  text-align:center;
+  font-size: 35rpx;
+  font-weight: 500;
+}

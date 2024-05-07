@@ -1,0 +1,11 @@
+<!--pages/tool/tool.wxml-->
+<view class="contain">
+  <view class="title">工具栏</view>
+  <view class="line" ></view>
+  <view class="toolList" >
+    <view class="toolBox" wx:for="{{toolList}}" wx:key="index">
+      <image class="toolIcon" src="{{item.imgSrc}}" />
+      <view class="toolTitle">{{item.title}}</view>
+    </view>
+  </view>
+</view>

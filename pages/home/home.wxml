@@ -1,0 +1,42 @@
+<!--pages/home/home.wxml-->
+<view class="container_all">
+  <view class="container_sub">
+    <!--页面主标题-->
+    <view class="container_title">
+      <view class="title-firstline">
+        <view class="title">极简音乐</view>
+        <image class="logo" src="../../images/logo.png"></image>
+      </view>
+      <view class="title_secondline">Minimalist Music</view>
+    </view>
+  </view>
+  <!--轮播图-->
+  <swiper class="swiper" indicator-dots="true" autoplay="true">
+    <swiper-item>
+      <view class="swiper_image-container">
+        <image class="swiper_image" src="http://8.219.238.51/images/swiper1.png"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper_image-container">
+        <image class="swiper_image" src="http://8.219.238.51/images/swiper2.png"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper_image-container">
+        <image class="swiper_image" src="http://8.219.238.51/images/swiper3.jpg"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+  <!--不同用户版本入口按钮-->
+  <view class="container-power">
+    <view class="choice_tip">请选择学习版本</view>
+    <!-- <view class="power_box"> -->
+      <view class="power" wx:key="title" wx:for="{{powerList}}" wx:for-item="power">
+        <view class="power_info" data-index="{{index}}" bindtap="onClick">
+          <image class="background" src="{{power.backgroundSrc}}"></image>
+        </view>
+      </view>
+    <!-- </view> -->
+  </view>
+</view>

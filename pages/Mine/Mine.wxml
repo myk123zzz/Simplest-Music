@@ -1,0 +1,128 @@
+<!--pages/Mine/Mine.wxml-->
+<view class="main">
+    <!-- 用户信息 -->
+    <view class="upper-half">
+    <view class="user-info" bindtap="goLogin">
+        <image class="userBackground" src="http://qwq.uovou.cn/image/userbg.jpg"></image>
+        <image class="avatar" src="{{userInfo? userInfo.avatarUrl: 'http://qwq.uovou.cn/image/user.png'}}"></image>
+        <view class="info">
+            <text class="name">{{userInfo? userInfo.nickName: '点击登录'}}</text>
+        </view>
+        <image class="setting" bindtap="setting" src="http://qwq.uovou.cn/image/set.png"></image>
+    </view>
+    <!-- 信息统计 -->
+
+    </view>
+    <!-- 过渡 -->
+    <view class="transition"></view>
+    <!-- 功能布局 -->
+    <view class="function">
+        <view class="function-detail">
+            <image class="function-img" src="http://qwq.uovou.cn/image/studyrecord.png"></image>
+            <text class="function-title">学习记录</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+        <view class="function-detail" bindtap="note">
+            <image class="function-img" src="http://qwq.uovou.cn/image/dailygoal.png"></image>
+            <text class="function-title">学习计划</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+        <view class="function-detail">
+            <image class="function-img" src="http://qwq.uovou.cn/image/wrongquestionset.png"></image>
+            <text class="function-title">课程评价</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+        <view class="function-detail">
+            <image class="function-img" src="http://qwq.uovou.cn/image/articlecollection.png"></image>
+            <text class="function-title">课程收藏</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+        <view class="function-detail" bindtap="modalinput">
+            <image class="function-img" src="http://qwq.uovou.cn/image/questionfeedbk.png"></image>
+            <text class="function-title">问题反馈</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+        <modal hidden="{{hiddenmodalput}}" title="欢迎留言" 
+   			confirm-text="提交" cancel-text="取消" bindcancel="modalinput" 
+   			bindconfirm="confirm">
+     <textarea bindinput="bindTextAreaBlur" placeholder="您可以直接留言或者微信联系我们"></textarea>
+   </modal>
+        <view class="function-detail" bindtap="loginOut">
+            <image class="function-img" src="http://qwq.uovou.cn/image/logout.png"></image>
+            <text class="function-title">退出登录</text>
+            <image class="function-rightArrow" src="http://qwq.uovou.cn/image/rightArrow.png"></image>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

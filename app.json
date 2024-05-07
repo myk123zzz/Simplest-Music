@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/tool/tool",
+    "pages/Mine/Mine",
+    "pages/enlightenment/enlightenment",
+    "pages/foundation/foundation",
+    "pages/advanced/advanced"
+  ],
+  "tabBar": {
+    "color": "#464a56",
+    "selectedColor": "#6595e9",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+        {
+        "pagePath":"pages/home/home",
+        "text":"首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home.png"
+        },
+        {
+          "pagePath":"pages/tool/tool",
+          "text":"工具",
+          "iconPath": "./images/tool.png",
+          "selectedIconPath": "./images/tool.png"
+        },
+        {
+          "pagePath":"pages/Mine/Mine",
+          "text":"我的",
+          "iconPath": "./images/mine.png",
+          "selectedIconPath": "./images/mine.png"
+        }
+    ]
+},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Minimalist Music",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
